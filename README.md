@@ -19,22 +19,22 @@ Example: sudo docker-compose ...
 
 # Build docker images
 
-Build docker images
+Build docker images:
 ```
 sudo docker-compose build --no-cache
 ```
 
-Start all containers
+Start all containers:
 ```
 sudo docker-compose up -d
 ```
 
-Stops all containers
+Stops all containers:
 ```
 sudo docker-compose down
 ```
 
-Stops all containers and delete mysql volume data
+Stops all containers and delete mysql volume data:
 ```
 sudo docker-compose down -v
 ```
@@ -46,17 +46,17 @@ sudo docker ps
 
 # Execute actions
 
-Execute composer update command
+Execute composer update command:
 ```
 sudo docker-compose exec app composer update
 ```
 
-Execute artisan key generate
+Execute artisan key generate:
 ```
 sudo docker-compose exec app php artisan key:generate
 ```
 
-Execute database migrate
+Execute database migrate:
 ```
 sudo docker-compose exec app php artisan migrate
 ```
